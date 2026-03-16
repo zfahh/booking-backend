@@ -2,7 +2,10 @@
 
 
 REST API for a Concert Booking System, built with NestJS + TypeORM + PostgreSQL
+
+
 (The answer for the bonus track can be found in the /doc folder )
+
 ---
 
 ## Getting Started
