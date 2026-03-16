@@ -92,7 +92,6 @@ export class BookingsService {
     }
 
     return await this.dataSource.transaction(async (manager) => {
-
       const lockedConcert = await manager
         .getRepository(Concert)
         .createQueryBuilder('concert')
