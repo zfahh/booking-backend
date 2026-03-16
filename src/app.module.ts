@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConcertsModule } from './concerts/concerts.module';
 import { BookingsModule } from './bookings/bookings.module';
 import { AuditLogsModule } from './audit-logs/audit-logs.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { AuditLogsModule } from './audit-logs/audit-logs.module';
         logging: config.get('NODE_ENV') === 'development',
       }),
     }),
+    AuthModule,
     ConcertsModule,
     BookingsModule,
     AuditLogsModule,
