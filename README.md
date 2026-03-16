@@ -2,6 +2,30 @@
 
 
 REST API for a Concert Booking System, built with NestJS + TypeORM + PostgreSQL
+(The answer for the bonus track can be found in the /doc folder )
+---
+
+## Getting Started
+
+### Installation
+1. Clone & install dependencies
+```bash
+ npm install
+ ```
+
+2. Setup environment
+```bash
+cp .env.example .env
+```
+
+3. Getting start PostgreSQL
+```bash
+docker compose up -d
+
+npm run start:dev
+```
+
+Server will start at http://localhost:3000
 
 ---
 
@@ -89,30 +113,6 @@ src/
 │
 └── migrations
 ```
-
----
-
-## Getting Started
-
-### Installation
-1. Clone & install dependencies
-```bash
- npm install
- ```
-
-2. Setup environment
-```bash
-cp .env.example .env
-```
-
-3. Getting start PostgreSQL
-```bash
-docker compose up -d
-
-npm run start:dev
-```
-
-Server will start at http://localhost:3000
 
 ---
 
